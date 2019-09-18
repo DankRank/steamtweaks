@@ -1,0 +1,1 @@
+reg add HKCU\Software\Valve\Steam /v SkinV4 /t REG_SZ /d "" /f
