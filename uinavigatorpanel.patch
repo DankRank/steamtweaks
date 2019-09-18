@@ -1,0 +1,88 @@
+--- resource/layout/uinavigatorpanel.layout	2019-09-17 02:16:02.000000000 +0300
++++ skins/egor/resource/layout/uinavigatorpanel.layout	2019-09-18 13:08:53.834653000 +0300
+@@ -706,11 +706,9 @@
+ 			textcolor="Labelfocus"
+ 			bgcolor="none"
+ 			font-family=basefont
+-			font-size=24
++			font-size=14
+ 			font-weight=400
+ 			font-style="uppercase"
+-			padding-left=5
+-			padding-right=5
+ 		}
+ 
+ 		CUINavButton [$OSX]
+@@ -718,11 +716,9 @@
+ 			textcolor="Labelfocus"
+ 			bgcolor="none"
+ 			font-family=basefont
+-			font-size=24
++			font-size=14
+ 			font-weight=400
+ 			font-style="uppercase"
+-			padding-left=5
+-			padding-right=5
+ 		}
+ 
+ 		CUINavButton:disabled
+@@ -879,42 +875,42 @@
+ 
+ 	layout
+ 	{
+-		place { control="label_store,label_library,label_community,label_me,label_news,label_console,label_oldlibrary" x=72 y=9 spacing=9 margin=2 height=40 }
++		place { control="label_store,label_library,label_community,label_me,label_news,label_console,label_oldlibrary" x=72 y=9 spacing=9 margin=2 height=20 }
+ 
+-		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" x="84" y="40" x="10" }
++		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" x="84" y="20" x="10" }
+ 
+-		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 }
++		place { control="label_community_new" start="label_community" y="-20" x="15" width=0 height=0 }
+ 
+-		place [!$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
+-		place [$OSX] { control="back,forward" x=3 y=17 height=30 width=30 spacing=2 margin-right=5 margin-top=0 }
++		place [!$OSX] { control="back,forward" x=3 y=9 height=20 width=30 spacing=2 margin-right=5 margin-top=0 }
++		place [$OSX] { control="back,forward" x=3 y=9 height=20 width=30 spacing=2 margin-right=5 margin-top=0 }
+ 
+-		place { control="PageLoadThrobber" align=right y=54 height=20 width=20  margin-right=9 margin-top=1 }
++		place { control="PageLoadThrobber" align=right y=34 height=20 width=20  margin-right=9 margin-top=1 }
+ 
+-		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=-2 margin-left=8 }
++		place { control="subnavgroup_library" align=top-center y=30 height=28 width=max margin-right=-2 margin-left=8 }
+ 
+-		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=9 }
++		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=34 height=20 width=max spacing=1 margin-left=9 }
+ 
+ 		place { control="library_search"  width=112 }
+ 
+-		place [!$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=12 }
+-		place  [$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=11 }
++		place [!$OSX] { control="label_search_icon,library_search" align=left y=36 height=17 spacing=1 x=12 }
++		place  [$OSX] { control="label_search_icon,library_search" align=left y=36 height=17 spacing=1 x=11 }
+ 
+-		region { name="dropdown" width=200 x=82 y=55 height=20 }
++		region { name="dropdown" width=200 x=82 y=35 height=20 }
+ 
+ 		place { control="library_filters" align=right spacing=1  region="dropdown" }
+ 
+ 		place { control="library_zoom" width=82 height=20 }
+ 
+-		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=85 }
+-		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=84 }
++		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=35 height=20 spacing=3 margin-right=85 }
++		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=35 height=20 spacing=3 margin-right=84 }
+ 
+-		place [!$OSX] { control="library_music_menu,library_music_add_button" align=left x=290 y=55 height=20 spacing=3 margin-right=180 }
+-		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=290 y=55 height=20 spacing=3 margin-right=179 }
++		place [!$OSX] { control="library_music_menu,library_music_add_button" align=left x=290 y=35 height=20 spacing=3 margin-right=180 }
++		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=290 y=35 height=20 spacing=3 margin-right=179 }
+ 
+ 
+-		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=54 height=20 spacing=4 margin-right=9 width=20 }
++		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=34 height=20 spacing=4 margin-right=9 width=20 }
+ 
+-		place { control=URLAnchor align=left y=54 height=28 width=max }
++		place { control=URLAnchor align=left y=34 height=28 width=max }
+ 		place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
+ 
+  	  	place { control=emailreminderbar margin-top=0 margin-left=6 margin-right=6 width=max height=48  start="LibraryAnchor" dir=down}
